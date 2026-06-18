@@ -1,0 +1,24 @@
+name: Python-test-pipeline
+
+on: push
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Python install
+        uses: actions/setup-python@v5
+        with:
+          python-install: 3.12
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run program
+        run: python app.py
