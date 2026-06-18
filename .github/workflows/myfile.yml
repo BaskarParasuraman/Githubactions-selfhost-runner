@@ -15,10 +15,7 @@ jobs:
       - name: Python install
         uses: actions/setup-python@v5
         with:
-          python-install: 3.12
-
-      - name: Install Dependencies
-        run: python3 -m pip install -r requirements.txt
+          python-install: "3.12"
 
       - name: Run program
         run: python app.py
