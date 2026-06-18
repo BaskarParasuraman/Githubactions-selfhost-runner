@@ -1,1 +1,1 @@
-print("Hello from GITHUB ACTIONS and working fine !!! Executed by Baskar")
+print("Hello from GITHUB ACTIONS and Executed by Baskar")
