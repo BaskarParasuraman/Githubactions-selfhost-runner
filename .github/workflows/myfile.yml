@@ -25,4 +25,4 @@ jobs:
           pip3 --version
 
       - name: Run application
-        run: python app.py
+        run: python3 app.py
