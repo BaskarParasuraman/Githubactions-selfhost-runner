@@ -17,12 +17,6 @@ jobs:
         with:
           python-install: '3.14'
 
-      - name: Create virtual environment
-        run: |
-          python3 -m venv venv
-          source venv/bin/activate
-          pip install -r requirements.txt
-
       - name: Debug Python
         run: |
           which python3
@@ -31,6 +25,4 @@ jobs:
           pip3 --version
 
       - name: Run application
-        run: |
-          source venv/bin/activate
-          python app.py
+        run: python app.py
